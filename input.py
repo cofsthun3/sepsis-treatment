@@ -16,7 +16,7 @@ def connect_to_database():
 
     connection_string = f"dbname = {database} user= {username} password={password} host={ip_address} port={port}"
 
-    conn = psycopg2.connect("dbname = dbname_here user= user password=password host=IP_address_here port=port_number_here")
+    conn = psycopg2.connect(connection_string)
     
     return conn
 
